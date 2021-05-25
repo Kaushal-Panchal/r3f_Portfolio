@@ -1,0 +1,42 @@
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  padding: 25px;
+  z-index: 2147483647;
+}
+.link {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #2e2931;
+}
+.link:hover {
+  color: rgb(87, 87, 87);
+}
+.title {
+  font-family: "Redressed", cursive;
+  font-style: italic;
+  font-size: 40px;
+  cursor: default;
+}
+@media screen and (max-width: 750px) {
+  .frame {
+    flex-direction: column;
+    padding: 10px;
+
+    justify-content: start;
+  }
+  .links {
+    margin-top: 20px;
+  }
+  .link {
+    margin: 10px;
+  }
+}

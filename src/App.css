@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Redressed&family=Sulphur+Point&display=swap");
+/* font-family: 'Redressed', cursive;
+font-family: 'Sulphur Point', sans-serif; */
+.scrollArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+canvas {
+  z-index: 1000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container__right {
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-x: hidden;
+  font-size: 50px;
+  height: 100vh;
+  padding: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.container__left {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-size: 50px;
+  height: 100vh;
+  padding: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.container__reach {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-size: 50px;
+  height: 100vh;
+  padding: 50px;
+}
+.intro__title {
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+@media screen and (max-width: 750px) {
+  .container__left {
+    padding: 5px;
   }
 }
