@@ -1,44 +1,25 @@
 {
-  "name": "portfolio_project",
-  "version": "0.1.0",
+  "name": "kaushal-panchal-portfolio",
   "private": true,
-  "dependencies": {
-    "@react-three/drei": "^3.11.1",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "emailjs-com": "^2.6.4",
-    "lerp": "^1.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-intersection-observer": "^8.31.0",
-    "react-scripts": "4.0.3",
-    "react-three-fiber": "^5.3.19",
-    "three": "^0.126.1",
-    "web-vitals": "^1.1.1"
-  },
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@react-three/drei": "9.114.3",
+    "@react-three/fiber": "8.17.10",
+    "@react-three/postprocessing": "2.16.3",
+    "postprocessing": "6.36.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.166.1",
+    "zustand": "4.5.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.3",
+    "vite": "5.4.11"
   }
 }
