@@ -5,20 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/size-check.mjs",
+    "preview": "vite preview",
+    "fonts": "node scripts/fonts.mjs"
   },
   "dependencies": {
-    "@react-three/drei": "9.114.3",
     "@react-three/fiber": "8.17.10",
-    "@react-three/postprocessing": "2.16.3",
-    "postprocessing": "6.36.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "three": "0.166.1",
-    "zustand": "4.5.5"
+    "three": "0.166.1"
   },
   "devDependencies": {
+    "@fontsource-variable/atkinson-hyperlegible-next": "5.3.0",
+    "@fontsource/anton": "5.3.0",
+    "@fontsource/kaushan-script": "5.3.0",
     "@vitejs/plugin-react": "4.3.3",
     "vite": "5.4.11"
   }
