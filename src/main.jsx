@@ -12,4 +12,4 @@ setTimeout(startThree, 0)
 
 const q = new URLSearchParams(location.search)
 if (q.has('perf')) import('./perf/overlay').then((m) => m.mountPerfOverlay())
-if (import.meta.env.DEV || q.has('zones')) import('./perf/zones').then((m) => m.watchZones())
+if (q.has('zones')) import('./perf/zones').then((m) => m.watchZones())

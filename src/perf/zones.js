@@ -1,4 +1,4 @@
-// Dev overlay (and ?zones in production): outlines the hero zone and warns if
+// Debug overlay, opt-in via ?zones: outlines the hero zone and warns if
 // any text node's box intersects it. The caption strip, the decorative word
 // and visually hidden text are the allowed exceptions.
 
